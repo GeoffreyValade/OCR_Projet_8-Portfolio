@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="./styles.css" rel="stylesheet">
+  <title>Portfolio - Geoffrey Valade</title>
+</head>
+
+<body>
+  <!-- NAV -->
+
+  <nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li>
+        <a href="#welcome-section">A propos</a>
+      </li>
+      <li>
+        <a href="#projects">Projets</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <!-- WELCOME SECTION -->
+
+  <section id="welcome-section" class="welcome-section">
+      <div class="welcome">
+        <h1>Salut, je suis Geoffrey !</h1>
+      </div>
+      <p>développeur web junior</p>
+
+    <div class="skills-section">
+      <h2><u>Mes compétences</u></h2>
+      <div class="skills">
+        <div class="frontend-skills">
+          <img src="./images/icons/frontend.png">
+          <h3>Front-end</h3>
+          <ul>
+            <li>ReactJS</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="backend-skills">
+          <img src="./images/icons/backend.png">
+          <h3>Back-end</h3>
+          <ul>
+            <li>Node.JS</li>
+            <li>JavaScript</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+
+        <div class="tools-skills">
+          <img src="./images/icons/tools.png">
+          <h3>Outils</h3>
+          <ul>
+            <li>GitHub / npm / yarn</li>
+            <li>PostMan</li>
+            <li>MongoDB Atlas</li>
+            <li>Visual Studio Code / Visual Studio</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <a href="#projects">Voir mes travaux d'étude</a>
+  </section>
+
+
+  <!-- PROJECTS SECTION -->
+
+  <section id="projects" class="projects-section">
+    <h2 class="projects-section-header">Mes projets personnels</h2>
+
+    <div class="projects-grid">
+      <a href="#modal1" class="project project-tile js-open-modal">
+        <img class="project-image" src="./images/Projet2/Projet2-1.png" alt="projet 1">
+        <p class="project-title">
+          Booki - HTML5/CSS3
+        </p>
+      </a>
+
+      <aside id="modal1" class="modal" role="dialog">
+        <div class="modal-wrapper js-modal-stop">
+          <h3 class="modal-title">Booki - Frontend - HTML5/CSS3</h3>
+          <div class="modal-content">
+            <div class="modal-top">
+              <ul class="modal-top-text">
+                <li><strong>Technologies</strong> : HTML5 / CSS3</li>
+                <li><strong>Logiciel utilisé</strong> : Visual Studio Code</li>
+                <li><strong>Temps de réalisation</strong> : ~3 semaines</li>
+                <li><strong>Périodes de travail</strong> : Décembre 2022 - Janvier 2023</li>
+              </ul>
+
+              <a href="https://github.com/GeoffreyValade/OCR_Projet_2-Booki" target="_blank"
+                class="btn btn-github modal-btn-github">
+                Voir le code sur GitHub
+              </a>
+            </div>
+            <div class="modal-texts-wrapper">
+              <p class="modal-text">
+                Booki est un site qui propose à l'utilisateur de trouver des hébergements et des activités pour ses
+                vacances.
+              </p>
+
+              <p class="modal-text">
+                Dans ce projet, j'ai dû réaliser une page HTML qui présente les services de Booki.
+              </p>
+
+              <ul class="modal-text-list">
+                <li><u>Les tâches ont été les suivantes :</u></li>
+                <li>- Appréhender le langage HTML et CSS</li>
+                <li>- Faire un découpage du site pour visualiser sa maquette</li>
+                <li>- Ecrire le code HTML et CSS pour que la production ressemble à la maquette fournie</li>
+                <li>- S'assurer de la bonne mise en forme du site sur téléphone et tablette (mediaqueries)</li>
+              </ul>
+            </div>
+            <div class="modal-images-wrapper">
+              <img class="modal-project-image" src="./images/Projet2/Projet2-1.png" alt="projet 1">
+              <img class="modal-project-image" src="./images/Projet2/Projet2-2.png" alt="projet 1">
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+      <a href="#modal2" class="project project-tile js-open-modal">
+        <img class="project-image" src="./images/Projet3/Projet3-1.png" alt="project">
+        <p class="project-title">
+          Sophie Bluel - JavaScript
+        </p>
+      </a>
+
+      <aside id="modal2" class="modal">
+        <div class="modal-wrapper js-modal-stop">
+          <h3 class="modal-title">Sophie Bluel - Frontend / API - JavaScript</h3>
+          <div class="modal-content">
+            <div class="modal-top">
+              <ul class="modal-top-text">
+                <li><strong>Technologies</strong> : HTML5 / CSS3 / JavaScript / Utilisation d'API</li>
+                <li><strong>Logiciel utilisé</strong> : Visual Studio Code</li>
+                <li><strong>Temps de réalisation</strong> : ~5 semaines</li>
+                <li><strong>Périodes de travail</strong> : Janvier 2023 - Mars 2023</li>
+              </ul>
+
+              <a href="https://github.com/GeoffreyValade/OCR_Projet_3-SophieBluel" target="_blank"
+                class="btn btn-github modal-btn-github">
+                Voir le code sur GitHub
+              </a>
+            </div>
+            <div class="modal-texts-wrapper">
+              <p class="modal-text">
+                Cette page répertorie des photos présentant les travaux de l'architecte fictive Sophie Bluel.
+              </p>
+
+              <p class="modal-text">
+                Le but de ce projet a été d'apprendre à traiter les données renvoyées par les API.
+              </p>
+
+              <ul class="modal-text-list">
+                <li><u>Les tâches ont été les suivantes :</u></li>
+                <li>- Intégrer la logique de récupération des données via une Base De Données (API)</li>
+                <li>- Implanter un filtre capable de trier les items en fonction de leur type</li>
+                <li>- Intégrer la logique d'authentification frontend (envoi des données user + gestion du token)</li>
+                <li>- Créer une modale permettant à l'utilisateur d'ajouter, modifier, et supprimer des travaux</li>
+              </ul>
+            </div>
+
+            <div class="modal-images-wrapper">
+              <img class="modal-project-image" src="./images/Projet3/Projet3-1.png" alt="projet 2">
+              <img class="modal-project-image" src="./images/Projet3/Projet3-4.png" alt="projet 2">
+              <img class="modal-project-image" src="./images/Projet3/Projet3-3.png" alt="projet 2">
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+      <a href="#modal3" class="project project-tile js-open-modal">
+        <img class="project-image" src="./images/Projet5/Projet5-1.png" alt="project">
+        <p class="project-title">
+          Nina Carducci - JavaScript
+        </p>
+      </a>
+
+      <aside id="modal3" class="modal">
+        <div class="modal-wrapper js-modal-stop">
+          <h3 class="modal-title">Nina Carducci - Frontend / Résolution de bug - JavaScript</h3>
+          <div class="modal-content">
+            <div class="modal-top">
+              <ul class="modal-top-text">
+                <li><strong>Technologies</strong> : HTML5 / CSS3 / JavaScript</li>
+                <li><strong>Logiciel utilisé</strong> : Visual Studio Code</li>
+                <li><strong>Temps de réalisation</strong> : ~2 semaines</li>
+                <li><strong>Périodes de travail</strong> : Avril 2023 - Avril 2023</li>
+              </ul>
+
+              <a href="https://github.com/GeoffreyValade/OCR_Projet_5-NinaCarducci" target="_blank"
+                class="btn btn-github modal-btn-github">
+                Voir le code sur GitHub
+              </a>
+            </div>
+            <div class="modal-texts-wrapper">
+              <p class="modal-text">
+                Ce site est un portfolio de la photographe Nina Carducci.
+              </p>
+              <p class="modal-text">
+                Nina nous a demandé d'optimiser son site du point de vue frontend.
+              </p>
+              <ul class="modal-text-list">
+                <li><u>Les tâches ont été les suivantes :</u></li>
+                <li>- Optimiser les images du site</li>
+                <li>- Régler les bugs sur les boutons suivants et précédents des modales</li>
+                <li>- Contrôler les couleurs du site et les modifier afin qu'elles soient contrastantes</li>
+                <li>- Ajouter des balises servant au référencement (Recherche Google + Réseaux sociaux)</li>
+              </ul>
+            </div>
+
+            <div class="modal-images-wrapper">
+              <img class="modal-project-image" src="./images/Projet5/Projet5-1.png" alt="projet 1">
+              <img class="modal-project-image" src="./images/Projet5/Projet5-2.png" alt="projet 1">
+              <img class="modal-project-image" src="./images/Projet5/Projet5-3.png" alt="projet 1">
+
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+      <a href="#modal4" class="project project-tile js-open-modal">
+        <img class="project-image" src="./images/Projet6/Projet6-1.png" alt="project">
+        <p class="project-title">
+          Kasa - ReactJS
+        </p>
+      </a>
+
+      <aside id="modal4" class="modal">
+        <div class="modal-wrapper js-modal-stop">
+          <h3 class="modal-title">Kasa - Frontend - ReactJS</h3>
+          <div class="modal-content">
+            <div class="modal-top">
+              <ul class="modal-top-text">
+                <li><strong>Technologies</strong> : ReactJS / CreateReactApp</li>
+                <li><strong>Logiciel utilisé</strong> : Visual Studio Code</li>
+                <li><strong>Temps de réalisation</strong> : ~5 semaines</li>
+                <li><strong>Périodes de travail</strong> : Avril 2023 - Juin 2023</li>
+              </ul>
+
+              <a href="https://github.com/GeoffreyValade/OCR_Projet_6-Kasa" target="_blank"
+                class="btn btn-github modal-btn-github">
+                Voir le code sur GitHub
+              </a>
+            </div>
+            <div class="modal-texts-wrapper">
+              <p class="modal-text">
+                Kasa est une application de location d'appartements proposés par des particuliers.
+              </p>
+              <p class="modal-text">
+                Ce projet m'a demandé d'utiliser CreateReactApp, afin d'en créer toutes les pages avec les composants
+                React.
+              </p>
+              <ul class="modal-text-list">
+                <li><u>Les tâches ont été les suivantes :</u></li>
+                <li>- Déterminer et créer les routes de l'application</li>
+                <li>- Créer les différents composants du site (card, carousel, banner, collapse, navbar, etc.) </li>
+                <li>- Placer, utiliser et configurer les composants React pour que le visuel corresponde à la maquette
+                </li>
+              </ul>
+            </div>
+
+            <div class="modal-images-wrapper">
+              <img class="modal-project-image" src="./images/Projet6/Projet6-1.png" alt="projet 1">
+              <img class="modal-project-image" src="./images/Projet6/Projet6-2.png" alt="projet 1">
+              <img class="modal-project-image" src="./images/Projet6/Projet6-3.png" alt="projet 1">
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+
+      <a href="#modal5" class="project project-tile js-open-modal">
+        <img class="project-image" src="./images/Projet7/Projet7-1.png" alt="project">
+        <p class="project-title">
+          Mon Vieux Grimoire - Express/NodeJS
+        </p>
+      </a>
+
+      <aside id="modal5" class="modal">
+        <div class="modal-wrapper js-modal-stop">
+          <h3 class="modal-title">Mon Vieux Grimoire - Backend / Serveur - Express/NodeJS</h3>
+          <div class="modal-content">
+            <div class="modal-top">
+              <ul class="modal-top-text">
+                <li><strong>Technologies</strong> : Express / NodeJS</li>
+                <li><strong>Logiciel utilisé</strong> : Visual Studio Code</li>
+                <li><strong>Temps de réalisation</strong> : ~5 semaines</li>
+                <li><strong>Périodes de travail</strong> : Juin 2023 - Juillet 2023</li>
+              </ul>
+
+              <a href="https://github.com/GeoffreyValade/OCR_Projet_7-MonVieuxGrimoire" target="_blank"
+                class="btn btn-github modal-btn-github">
+                Voir le code sur GitHub
+              </a>
+            </div>
+            <div class="modal-texts-wrapper">
+              <p class="modal-text">
+                "Mon Vieux Grimoire" est un site de notation de livres.
+              </p>
+              <p class="modal-text">
+                Dans ce projet, je me suis occupé de la partie backend pour gérer les données et les envoyer vers le
+                site.
+              </p>
+              <ul class="modal-text-list">
+                <li><u>Les tâches ont été les suivantes :</u></li>
+                <li>- Créer une base de données</li>
+                <li>- Configurer les requêtes envoyées par les formulaires du site (GET, POST, DELETE, PUT)</li>
+                <li>- S'assurer que les données ont bien été reçues par le site et au bon format (JSON)</li>
+                <li>- Appréhender et configurer la logique de connexion côté backend (hashage de mdp, génération de
+                  token, etc.)</li>
+              </ul>
+            </div>
+
+            <div class="modal-images-wrapper">
+              <img class="modal-project-image" src="./images/Projet7/Projet7-1.png" alt="projet 1">
+              <img class="modal-project-image" src="./images/Projet7/Projet7-4.png" alt="projet 1">
+              <img class="modal-project-image" src="./images/Projet7/Projet7-3.png" alt="projet 1">
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+
+    <a href="https://github.com/GeoffreyValade/" class="btn btn-show-all" target="_blank">Aller sur GitHub pour tout
+      voir<i class="fas fa-chevron-right"></i></a>
+  </section>
+
+
+  <!-- ABOUT SECTION -->
+
+  <section id="about-section" class="about-section">
+    <div class="about">
+      <h2>A propos</h2>
+      <ul>
+        <li><strong>Ville</strong> : Lille et alentours</li>
+        <li><strong>Langues</strong> : Anglais</li>
+        <li><strong>Disponibilité</strong> : En cours de formation</li>
+        <li><strong>Activités et hobbies</strong> : Jeux-vidéos, dioramas, peinture, jeu de rôle</li>
+      </ul>
+    </div>
+  </section>
+
+
+
+  <!-- CONTACT SECTION -->
+
+  <section id="contact" class="contact-section">
+    <div class="contact-section-header">
+      <h2>Travaillons ensemble...</h2>
+      <p>Comment préférez-vous me contacter ?</p>
+    </div>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/geoffrey-valade-416215253/" target="_blank" class="btn contact-details"><i
+          class="fab fa-linkedin-square"></i> Linkedin</a>
+      <a id="profile-link" href="https://github.com/GeoffreyValade" target="_blank" class="btn contact-details"><i
+          class="fab fa-github"></i> GitHub</a>
+      <a href="mailto:geoffrey.valade@hotmail.com" class="btn contact-details"><i class="fas fa-at"></i> Mail</a>
+      <a href="tel:0667755254" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Téléphone</a>
+    </div>
+  </section>
+
+
+  <!-- FOOTER SECTION -->
+
+  <footer>
+    <a href="#welcome-section">Revenir en haut de la page</a>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
