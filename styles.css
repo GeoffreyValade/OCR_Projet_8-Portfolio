@@ -285,7 +285,7 @@ img {
 } 
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .skills {
   grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-columns: auto;
